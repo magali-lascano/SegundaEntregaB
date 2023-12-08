@@ -1,0 +1,46 @@
+[
+    {
+        "id": [],
+        "title": "Producto",
+        "description": "Esto es un producto",
+        "code": "abc111",
+        "price": 222,
+        "status": true,
+        "stock": 22,
+        "category": "Remeras",
+        "thumbnails": ["image1.jpg", "image2.jpg"]
+    },
+    {
+        "id": [],
+        "title": "Producto",
+        "description": "Esto es un producto",
+        "code": "abc222",
+        "price": 222,
+        "status": true,
+        "stock": 22,
+        "category": "Remeras",
+        "thumbnails": ["image3.jpg", "image4.jpg"]
+    },
+    {
+        "id": [],
+        "title": "Producto",
+        "description": "Esto es un producto",
+        "code": "abc333",
+        "price": 222,
+        "status": true,
+        "stock": 22,
+        "category": "Remeras",
+        "thumbnails": ["image5.jpg", "image6.jpg"]
+    },
+    {
+        "id": [],
+        "title": "Producto",
+        "description": "Esto es un producto",
+        "code": "abc444",
+        "price": 222,
+        "status": true,
+        "stock": 22,
+        "category": "Remeras",
+        "thumbnails": ["image7.jpg", "image8.jpg"]
+    } 
+]

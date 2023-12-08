@@ -1,0 +1,53 @@
+<h2>Productos (Real Time)</h2>
+
+<table>
+	<thead>
+		<tr>
+			<th>Id: </th>
+			<th>Product: </th>
+			<th>Description: </th>
+			<th>Price: $</th>
+			<th>Thumbnail: </th>
+			<th>Code: </th>
+			<th>Stock: </th>
+			<th>Status: </th>
+			<th>Category: </th>
+		</tr>
+	</thead>
+	<tbody id="productTable">
+		{{#each products}}
+			<tr>
+				<td> {{id}}</td>
+				<td> {{title}}</td>
+				<td> {{description}}</td>
+				<td> {{code}}</td>
+				<td> {{price}}</td>
+				<td> {{status}}</td>
+				<td> {{stock}}</td>
+				<td> {{category}}</td>
+				<td> {{thumbnails}}</td>
+				
+				<td><button type="submit" class="classDeleteProduct" data-id="{{id}}">Borrar</button></td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
+<hr />
+
+<h2>Agregar Producto</h2>
+
+<form id="createProduct">
+	<input type="text" id="productTitle" name="title" placeholder="title" />
+	<input type="text" id="productDescription" name="description" placeholder="description" />
+	<input type="number" id="productPrice" name="price" placeholder="price" />
+	<input type="text" id="productThumbnail" name="thumbnail" placeholder="thumbnail" />
+	<input type="number" id="productCode" name="code" placeholder="code" />
+	<input type="number" id="productStock" name="stock" placeholder="stock" />
+	<input type="text" id="productStatus" name="status" placeholder="status" />
+	<input type="text" id="productCategory" name="category" placeholder="category" />
+
+	<button type="submit" id="addProduct">Agregar</button>
+</form>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="index.js"></script>

@@ -1,0 +1,22 @@
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+
+	<h2>Productos</h2>
+{{#if products.length}}
+	<ul>
+		{{#each products}}
+			<li>Id: {{id}}</li>
+			<li>Product: {{title}}</li>
+			<li>Description: {{description}}</li>
+			<li>Price: ${{price}}</li>
+			<li>Thumbnail: {{thumbnail}}</li>
+			<li>Code: {{code}}</li>
+			<li>Stock: {{stock}}</li>
+			<li>Status: {{status}}</li>
+			<li>Category: {{category}}</li>
+			<hr />
+		{{/each}}
+	</ul>
+{{else}}
+	<h2>No hay productos</h2>
+{{/if}}
